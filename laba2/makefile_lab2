@@ -1,0 +1,7 @@
+all: convert recognize
+convert: convert.c
+	gcc -o convert convert.c
+recognize: recognize.c
+	gcc -o recognize recognize.c
+clean:
+	rm -rf convert recognize
