@@ -1,0 +1,9 @@
+all: capture recognize allone
+capture: capture.c
+	gcc -o capture capture.c
+recognize: recognize.c
+	gcc -o recognize recognize.c
+ allone:  allone.c
+	gcc -o  allone  allone.c
+clean:
+	rm -rf capture recognize  allone
